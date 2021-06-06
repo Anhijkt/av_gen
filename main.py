@@ -31,6 +31,6 @@ async def read_item(hash_str: str) :
 		return Response(contents, media_type="image/jpeg")
 
 
-@app.get("")
+@app.get("/")
 async def index() :
 	return {"so this is a basic api that takes in a hash(/hash/{hash_str}) and returns you a image for avatar"}
